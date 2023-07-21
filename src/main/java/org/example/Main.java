@@ -42,7 +42,6 @@ class Market<T> implements QueueBehaviour<T>, MarketBehaviour<T> {
     public void update() {
         if (!isEmpty()) {
             T order = exit();
-            // Обработка заказа и его выполнение
             System.out.println("Заказ обработан и выполнен: " + order);
         } else {
             System.out.println("Нет заказов для обработки!");
